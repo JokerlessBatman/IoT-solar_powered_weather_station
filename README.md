@@ -1,2 +1,1 @@
-following code has been tested only on Linux
-
+code from serial-at-commands_UDP.py has been only tested on Linux
