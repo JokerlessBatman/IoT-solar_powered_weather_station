@@ -3,7 +3,6 @@ import socket
 
 IP = '142.93.104.222'
 PORT = 9000
-MSG = b"Hello world!"
 
 print(f"IP address: {IP}")
 print(f"PORT:       {PORT}")
