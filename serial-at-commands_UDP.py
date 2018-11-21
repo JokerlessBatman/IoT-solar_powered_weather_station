@@ -53,8 +53,16 @@ def send_UDP_data(ser):
     UDP_data = input("Enter data you want to send to the server: ")
     send_over_UDP_command = f'AT+USOST=0,"{serverIP}",{serverUDP},{len(UDP_data)},"{UDP_data}"\r\n'
     ser.write(send_over_UDP_command.encode())
-    time.sleep(0.5)
+    time.sleep(3)
     print(ser.read_all().decode())
+    time.sleep(3)
+    print(ser.read_all().decode())
+    ser.write('AT+usorf=0,255\r\n'.encode())
+    time.sleep(3)
+    print(ser.read_all().decode())
+    time.sleep(3)
+    print(ser.read_all().decode())
+
 
 
 if __name__ == '__main__':
