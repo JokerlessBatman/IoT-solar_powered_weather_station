@@ -20,7 +20,7 @@ sensors = {
 }
 
 try:
-    conn = psycopg2.connect("dbname = 'iotproject' user = 'iot_user' host = 'localhost' password = 'iot_password'")
+    conn = psycopg2.connect("dbname = 'iotproject' user = '***' host = 'localhost' password = '***'")
 except psycopg2.DatabaseError as ex:
     print("I am unable to connect the database: {0}".format(ex))
     sys.exit(1)
